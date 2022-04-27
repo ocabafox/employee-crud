@@ -10,6 +10,7 @@ import {
 
 const router = Router();
 
+// /api/v1/employees?page=1&limit=1
 router.route('/api/v1/employees').get(getAllEmployees);
 router.route('/api/v1/employee/:id').get(getEmployeeById);
 router.route('/api/v1/employee').post(createEmployee).get(getAllEmployees);
